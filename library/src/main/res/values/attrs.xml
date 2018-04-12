@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WaterProgressView">
+        <attr name="wpv_main_arc_enable" format="boolean"/>
+        <attr name="wpv_main_arc_start_angle" format="integer"/>
+        <attr name="wpv_main_arc_progress" format="integer"/>
+        <attr name="wpv_main_arc_width" format="integer"/>
+        <attr name="wpv_main_arc_color" format="color"/>
+        <attr name="wpv_main_arc_bg_enable" format="boolean"/>
+        <attr name="wpv_main_arc_bg_width" format="integer"/>
+        <attr name="wpv_main_arc_bg_color" format="color"/>
+
+        <attr name="wpv_center_text_enable" format="boolean"/>
+        <attr name="wpv_center_text_size" format="dimension"/>
+        <attr name="wpv_center_text_color" format="color"/>
+
+        <attr name="wpv_wave_enable" format="boolean"/>
+        <attr name="wpv_wave_color" format="color"/>
+    </declare-styleable>
+</resources>

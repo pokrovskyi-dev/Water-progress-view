@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.mobismarthealth.library.WaterProgressView
+        android:id="@+id/waterProgressView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        app:wpv_main_arc_enable="true"
+        app:wpv_main_arc_progress="90"
+        app:wpv_main_arc_start_angle="270"
+        app:wpv_main_arc_width="30"
+        app:wpv_main_arc_color="@color/colorPrimary"
+        app:wpv_main_arc_bg_enable="true"
+        app:wpv_main_arc_bg_width="15"
+        app:wpv_main_arc_bg_color="@color/colorPrimaryDark"
+        app:wpv_center_text_enable="true"
+        app:wpv_center_text_size="16sp"
+        app:wpv_center_text_color="#000000"
+        app:wpv_wave_enable="true"
+        app:wpv_wave_color="#000000"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Main Progress"/>
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/mainArcProgressSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main Start Angle"/>
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/mainArcStartAngleSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="360"
+                android:progress="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main Width"/>
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/mainArcWidthSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Second Progress"/>
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/secondArcProgressSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Second Start Angle"/>
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/secondArcStartAngleSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="360"
+                android:progress="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Second Width"/>
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/secondArcWidthSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
