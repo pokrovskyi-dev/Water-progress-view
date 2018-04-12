@@ -12,11 +12,11 @@ allprojects {
 ```
 ```groovy
 dependencies {
-    compile 'com.github.sergey-pokrovskyi:Water-progress-view:v0.0.9'
+    compile 'com.github.pokrovskyi-dev:Water-progress-view:v0.0.10'
 }
 ```
 
-[v0.0.9 Javadoc](https://jitpack.io/com/github/sergey-pokrovskyi/Water-progress-view/v0.0.9/javadoc/)
+[v0.0.10 Javadoc](https://jitpack.io/com/github/sergey-pokrovskyi/Water-progress-view/v0.0.10/javadoc/)
 
 ```groovy
 <com.mobismarthealth.library.WaterProgressView
