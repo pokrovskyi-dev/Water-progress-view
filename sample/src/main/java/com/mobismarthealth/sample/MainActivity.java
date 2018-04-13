@@ -1,8 +1,8 @@
 package com.mobismarthealth.sample;
 
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.SeekBar;
 import android.widget.Toast;
@@ -11,22 +11,24 @@ import com.mobismarthealth.library.WaterProgressView;
 
 public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener{
 
-    Context context = this;
+    private Context context = this;
 
-    WaterProgressView waterProgressView;
+    private WaterProgressView waterProgressView;
 
     // Main
-    SeekBar mainArcProgressSeekBar, mainArcStartAngleSeekBar, mainArcWidthSeekBar;
+    private SeekBar mainArcProgressSeekBar;
+    private SeekBar mainArcStartAngleSeekBar;
+    private SeekBar mainArcWidthSeekBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        waterProgressView = (WaterProgressView)findViewById(R.id.waterProgressView);
-        mainArcProgressSeekBar = (SeekBar)findViewById(R.id.mainArcProgressSeekBar);
-        mainArcStartAngleSeekBar = (SeekBar)findViewById(R.id.mainArcStartAngleSeekBar);
-        mainArcWidthSeekBar = (SeekBar)findViewById(R.id.mainArcWidthSeekBar);
+        waterProgressView = findViewById(R.id.waterProgressView);
+        mainArcProgressSeekBar = findViewById(R.id.mainArcProgressSeekBar);
+        mainArcStartAngleSeekBar = findViewById(R.id.mainArcStartAngleSeekBar);
+        mainArcWidthSeekBar = findViewById(R.id.mainArcWidthSeekBar);
 
         mainArcProgressSeekBar.setOnSeekBarChangeListener(this);
         mainArcStartAngleSeekBar.setOnSeekBarChangeListener(this);
